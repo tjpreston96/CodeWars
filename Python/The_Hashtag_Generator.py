@@ -4,7 +4,7 @@
 # " Hello there thanks for trying my Kata"  =>  "#HelloThereThanksForTryingMyKata"
 
 # Answer:
-def generate_hashtag(s):
+def generate_hashtag(s: str) -> str:
     return f"#{s.title().replace(' ','')}" if 0 < len(s.strip()) <= 140 else False
 
 
